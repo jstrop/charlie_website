@@ -2,7 +2,6 @@ CharlieWebsite::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/music',    :to => 'pages#music'
-  match '/home', :to => 'pages#home'
 
   root :to => 'pages#home'
 
