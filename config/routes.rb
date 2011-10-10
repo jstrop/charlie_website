@@ -1,11 +1,9 @@
 CharlieWebsite::Application.routes.draw do
-  get "pages/home"
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/music',    :to => 'pages#music'
 
-  get "pages/contact"
-
-  get "pages/about"
-
-  get "pages/music"
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
